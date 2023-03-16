@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/new', function () {
+    // $todos = DB::table('todos')->get();
     $todos = ['Learn Laravel', 'Learn Blade', 'Build Cool Stuffs'];
     return view('child', ['todos' => $todos]);
-    // return view('child', ['name' => 'Samantha']);
 });
